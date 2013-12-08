@@ -16,5 +16,565 @@
 			"email": "admin@mail.com",
 			"date_joined": "2013-12-08T16:31:04.763Z"
 		}
+	},
+	{	
+		"pk": 1,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Кондрат",
+			"last_name": "Куракин",
+			"middle_name": "Василиевич",
+			"id_card_number": 1000,
+			"date_of_birth": "1995-06-07",
+			"group": 1
+		}
+	},
+	{	
+		"pk": 2,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Иван",
+			"last_name": "Поповский",
+			"middle_name": "Алексеевич",
+			"id_card_number": 1001,
+			"date_of_birth": "1996-07-10",
+			"group": 1
+		}
+	},
+	{	
+		"pk": 3,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Бочкин",
+			"middle_name": "Борисович",
+			"id_card_number": 1002,
+			"date_of_birth": "1996-05-11",
+			"group": 1
+		}
+	},
+	{	
+		"pk": 4,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Куракин",
+			"middle_name": "Иванович",
+			"id_card_number": 1003,
+			"date_of_birth": "1996-05-01",
+			"group": 1
+		}
+	},
+	{	
+		"pk": 5,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Квакин",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1004,
+			"date_of_birth": "1996-10-06",
+			"group": 1
+		}
+	},
+	{	
+		"pk": 6,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Куракин",
+			"middle_name": "Игнатович",
+			"id_card_number": 1005,
+			"date_of_birth": "1995-06-12",
+			"group": 1
+		}
+	},
+	{	
+		"pk": 7,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Антон",
+			"last_name": "Поповский",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1006,
+			"date_of_birth": "1995-01-12",
+			"group": 2
+		}
+	},
+	{	
+		"pk": 8,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Иван",
+			"last_name": "Ульянов",
+			"middle_name": "Антонович",
+			"id_card_number": 1007,
+			"date_of_birth": "1995-02-04",
+			"group": 2
+		}
+	},
+	{	
+		"pk": 9,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Иван",
+			"last_name": "Куракин",
+			"middle_name": "Борисович",
+			"id_card_number": 1008,
+			"date_of_birth": "1996-11-06",
+			"group": 2
+		}
+	},
+	{	
+		"pk": 10,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Поповский",
+			"middle_name": "Иванович",
+			"id_card_number": 1009,
+			"date_of_birth": "1995-01-04",
+			"group": 2
+		}
+	},
+	{	
+		"pk": 11,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Игнат",
+			"last_name": "Ульянов",
+			"middle_name": "Василиевич",
+			"id_card_number": 1010,
+			"date_of_birth": "1995-03-09",
+			"group": 2
+		}
+	},
+	{	
+		"pk": 12,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Бочкин",
+			"middle_name": "Антонович",
+			"id_card_number": 1011,
+			"date_of_birth": "1995-04-14",
+			"group": 2
+		}
+	},
+	{	
+		"pk": 13,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Ульянов",
+			"middle_name": "Ильич",
+			"id_card_number": 1012,
+			"date_of_birth": "1996-05-21",
+			"group": 3
+		}
+	},
+	{	
+		"pk": 14,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Крысов",
+			"middle_name": "Борисович",
+			"id_card_number": 1013,
+			"date_of_birth": "1995-01-03",
+			"group": 3
+		}
+	},
+	{	
+		"pk": 15,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Игнат",
+			"last_name": "Крысов",
+			"middle_name": "Иванович",
+			"id_card_number": 1014,
+			"date_of_birth": "1995-01-01",
+			"group": 3
+		}
+	},
+	{	
+		"pk": 16,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Бочкин",
+			"middle_name": "Василиевич",
+			"id_card_number": 1015,
+			"date_of_birth": "1995-10-04",
+			"group": 3
+		}
+	},
+	{	
+		"pk": 17,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Квакин",
+			"middle_name": "Василиевич",
+			"id_card_number": 1016,
+			"date_of_birth": "1995-06-09",
+			"group": 3
+		}
+	},
+	{	
+		"pk": 18,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Игнат",
+			"last_name": "Куракин",
+			"middle_name": "Ильич",
+			"id_card_number": 1017,
+			"date_of_birth": "1995-10-04",
+			"group": 3
+		}
+	},
+	{	
+		"pk": 19,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Поповский",
+			"middle_name": "Борисович",
+			"id_card_number": 1018,
+			"date_of_birth": "1995-06-09",
+			"group": 4
+		}
+	},
+	{	
+		"pk": 20,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Кондрат",
+			"last_name": "Поповский",
+			"middle_name": "Василиевич",
+			"id_card_number": 1019,
+			"date_of_birth": "1995-09-18",
+			"group": 4
+		}
+	},
+	{	
+		"pk": 21,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Василий",
+			"last_name": "Крысов",
+			"middle_name": "Иванович",
+			"id_card_number": 1020,
+			"date_of_birth": "1996-11-11",
+			"group": 4
+		}
+	},
+	{	
+		"pk": 22,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Василий",
+			"last_name": "Квакин",
+			"middle_name": "Алексеевич",
+			"id_card_number": 1021,
+			"date_of_birth": "1995-08-10",
+			"group": 4
+		}
+	},
+	{	
+		"pk": 23,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Крысов",
+			"middle_name": "Алексеевич",
+			"id_card_number": 1022,
+			"date_of_birth": "1996-03-10",
+			"group": 4
+		}
+	},
+	{	
+		"pk": 24,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Антон",
+			"last_name": "Куракин",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1023,
+			"date_of_birth": "1996-01-07",
+			"group": 4
+		}
+	},
+	{	
+		"pk": 25,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Поповский",
+			"middle_name": "Василиевич",
+			"id_card_number": 1024,
+			"date_of_birth": "1995-04-22",
+			"group": 5
+		}
+	},
+	{	
+		"pk": 26,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Крысов",
+			"middle_name": "Борисович",
+			"id_card_number": 1025,
+			"date_of_birth": "1995-10-11",
+			"group": 5
+		}
+	},
+	{	
+		"pk": 27,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Иван",
+			"last_name": "Квакин",
+			"middle_name": "Борисович",
+			"id_card_number": 1026,
+			"date_of_birth": "1996-03-22",
+			"group": 5
+		}
+	},
+	{	
+		"pk": 28,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Игнат",
+			"last_name": "Куракин",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1027,
+			"date_of_birth": "1995-03-20",
+			"group": 5
+		}
+	},
+	{	
+		"pk": 29,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Крысов",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1028,
+			"date_of_birth": "1995-10-19",
+			"group": 5
+		}
+	},
+	{	
+		"pk": 30,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Поповский",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1029,
+			"date_of_birth": "1995-11-24",
+			"group": 5
+		}
+	},
+	{	
+		"pk": 31,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Алексей",
+			"last_name": "Крысов",
+			"middle_name": "Кондратьевич",
+			"id_card_number": 1030,
+			"date_of_birth": "1996-04-16",
+			"group": 6
+		}
+	},
+	{	
+		"pk": 32,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Поповский",
+			"middle_name": "Иванович",
+			"id_card_number": 1031,
+			"date_of_birth": "1995-10-16",
+			"group": 6
+		}
+	},
+	{	
+		"pk": 33,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Полянский",
+			"middle_name": "Ильич",
+			"id_card_number": 1032,
+			"date_of_birth": "1995-11-10",
+			"group": 6
+		}
+	},
+	{	
+		"pk": 34,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Антон",
+			"last_name": "Ульянов",
+			"middle_name": "Иванович",
+			"id_card_number": 1033,
+			"date_of_birth": "1995-04-18",
+			"group": 6
+		}
+	},
+	{	
+		"pk": 35,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Антон",
+			"last_name": "Поповский",
+			"middle_name": "Алексеевич",
+			"id_card_number": 1034,
+			"date_of_birth": "1996-02-15",
+			"group": 6
+		}
+	},
+	{	
+		"pk": 36,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Илья",
+			"last_name": "Квакин",
+			"middle_name": "Василиевич",
+			"id_card_number": 1035,
+			"date_of_birth": "1996-02-11",
+			"group": 6
+		}
+	},
+	{	
+		"pk": 37,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Игнат",
+			"last_name": "Поповский",
+			"middle_name": "Игнатович",
+			"id_card_number": 1036,
+			"date_of_birth": "1995-01-21",
+			"group": 7
+		}
+	},
+	{	
+		"pk": 38,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Руденко",
+			"middle_name": "Василиевич",
+			"id_card_number": 1037,
+			"date_of_birth": "1996-06-03",
+			"group": 7
+		}
+	},
+	{	
+		"pk": 39,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Василий",
+			"last_name": "Руденко",
+			"middle_name": "Иванович",
+			"id_card_number": 1038,
+			"date_of_birth": "1996-04-08",
+			"group": 7
+		}
+	},
+	{	
+		"pk": 40,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Иван",
+			"last_name": "Ульянов",
+			"middle_name": "Алексеевич",
+			"id_card_number": 1039,
+			"date_of_birth": "1996-02-18",
+			"group": 7
+		}
+	},
+	{	
+		"pk": 41,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Борис",
+			"last_name": "Бочкин",
+			"middle_name": "Борисович",
+			"id_card_number": 1040,
+			"date_of_birth": "1996-05-23",
+			"group": 7
+		}
+	},
+	{	
+		"pk": 42,
+		"model": "faculty.student",
+		"fields": {
+			"first_name": "Василий",
+			"last_name": "Бочкин",
+			"middle_name": "Иванович",
+			"id_card_number": 1041,
+			"date_of_birth": "1995-06-23",
+			"group": 7
+		}
+	},
+	{	
+		"pk": 1,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 4,
+			"name": "Заучки"
+		}
+	},
+	{	
+		"pk": 2,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 9,
+			"name": "Лентяи"
+		}
+	},
+	{	
+		"pk": 3,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 15,
+			"name": "Балбесы"
+		}
+	},
+	{	
+		"pk": 4,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 21,
+			"name": "Отличники"
+		}
+	},
+	{	
+		"pk": 5,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 25,
+			"name": "Гуляки"
+		}
+	},
+	{	
+		"pk": 6,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 32,
+			"name": "Прилежные"
+		}
+	},
+	{	
+		"pk": 7,
+		"model": "faculty.group",
+		"fields": {
+			"senior_student": 41,
+			"name": "Зубрилы"
+		}
 	}
 ]
