@@ -5,3 +5,6 @@ devserver:
 
 syncdb:
 	$(PROJECT_DIR)/manage.py syncdb
+
+syncdb-silent:
+	$(PROJECT_DIR)/manage.py syncdb --noinput
