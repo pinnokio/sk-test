@@ -1,3 +1,31 @@
+# -*- coding: utf-8 -*-
 from django.db import models
 
-# Create your models here.
+
+class Student(models.Model):
+    last_name = models.CharField(u"Фамилия", max_length=30)
+    first_name = models.CharField(u"Имя", max_length=20)
+    middle_name = models.CharField(u"Отчество", max_length=30)
+    date_of_birth = models.DateField(u"Дата рождения")
+    id_card_number = models.PositiveIntegerField(u"Номер студенческого билета")
+    group = models.ForeignKey("Group", verbose_name=u"Группа")
+
+    def __unicode__(self):
+        return u"%s %s %s" % (self.last_name,
+                              self.first_name,
+                              self.middle_name)
+
+    class Meta:
+        verbose_name = u"Студента"
+        verbose_name_plural = u"Студенты"
+
+class Group(models.Model):
+    name = models.CharField(max_length=30)
+    senior_student = models.OneToOneField(Student, related_name="senior_student")
+
+    def __unicode__(self):
+        return u"%s" % self.name
+
+    class Meta:
+        verbose_name = u"Группу"
+        verbose_name_plural = u"Группы"
