@@ -8,7 +8,7 @@ class Student(models.Model):
     middle_name = models.CharField(u"Отчество", max_length=30)
     date_of_birth = models.DateField(u"Дата рождения")
     id_card_number = models.PositiveIntegerField(u"Номер студенческого билета")
-    group = models.ForeignKey("Group", verbose_name=u"Группа")
+    group = models.ForeignKey("Group", verbose_name=u"Группа", null=True, blank=True)
 
     def __unicode__(self):
         return u"%s %s %s" % (self.last_name,
@@ -20,7 +20,7 @@ class Student(models.Model):
         verbose_name_plural = u"Студенты"
 
 class Group(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(u"Название", max_length=30)
     senior_student = models.OneToOneField(Student, related_name="senior_student")
 
     def __unicode__(self):
