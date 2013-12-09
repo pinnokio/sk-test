@@ -1,0 +1,14 @@
+<a href="{% url 'group-list' %}">На главную</a>
+<p>Название группы: {{ group.name }}</p>
+{% for student in group.student_set.all %}
+	<table border="1">
+	<tr>
+	<td>
+		{{student.last_name}} {{ student.first_name }} {{student.middle_name}}
+	</td>
+	<td>
+		<a href="#">Изменить</a>
+	</td>
+	</tr>
+	</table>
+{% endfor %}
