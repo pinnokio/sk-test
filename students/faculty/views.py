@@ -25,5 +25,4 @@ class StudentUpdateView(UpdateView):
     model = Student
     
     def get_success_url(self):
-        return HttpResponseRedirect(reverse('group_details', 
-                                    args=(int((self.kwargs.get('pk', None))),)))
+        return reverse('group-details', args=(self.object.group.id,))
