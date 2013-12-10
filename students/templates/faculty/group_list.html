@@ -1,14 +1,21 @@
 <h1>Список всех групп</h1>
 <table border="1" bordercolor="gray">
+	<tr>
+		<th>Название</th>
+		<th>Староста</th>
+		<th>Студентов</th>
+	</tr>
 {% for group in object_list %}
 	<tr>
-	<!-- <td><a href="/group/{{ group.id }}">{{ group.name }}</a></td> -->
 	{% url 'group-details' group.id as group_url %}
 	<td><a href="{{ group_url }}">{{ group.name }}</a></td>
 	<td>{{ group.senior_student|default_if_none:"Не назначен" }}</td>
-	<td>{{ group.student_set.count }}</td>
+	<td align="center">{{ group.student_set.count }}</td>
 	</tr>
 {% empty %}
-	<li>No groups yet</li>
+	<tr colspan="3">No groups yet</tr>
 {% endfor %}
 </table>
+<hr>
+<a href="{% url 'group-create'%}">Создать новую группу</a>
+<a href="{% url 'student-create'%}">Создать нового студента</a>

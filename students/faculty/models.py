@@ -8,8 +8,10 @@ class Student(models.Model):
     middle_name = models.CharField(u"Отчество", max_length=30)
     date_of_birth = models.DateField(u"Дата рождения")
     id_card_number = models.PositiveIntegerField(u"Номер студенческого билета")
-    group = models.ForeignKey("Group", verbose_name=u"Группа",
-                              null=True, blank=True)
+    group = models.ForeignKey("Group", 
+                              null=True, 
+                              blank=True, 
+                              verbose_name=u"Группа")
 
     class Meta:
         verbose_name = u"Студент"
@@ -22,11 +24,12 @@ class Student(models.Model):
 
 
 class Group(models.Model):
-    name = models.CharField(u"Название", max_length=30)
+    name = models.CharField(u"Название группы", max_length=30)
     senior_student = models.OneToOneField(Student,
                                           related_name="senior_student",
                                           null=True, blank=True,
-                                          on_delete=models.SET_NULL)
+                                          on_delete=models.SET_NULL,
+                                          verbose_name=u"Староста")
 
     class Meta:
         verbose_name = u"Группа"
