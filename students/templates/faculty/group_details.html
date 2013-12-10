@@ -1,7 +1,8 @@
 <a href="{% url 'group-list' %}">На главную</a>
-<p>Название группы: {{ group.name }}</p>
-{% for student in group.student_set.all %}
+<p>Группа: {{ group.name }}</p>
 	<table border="1">
+	<caption>Список студентов</caption>
+{% for student in group.student_set.all %}
 	<tr>
 	<td>
 		{{student.last_name}} {{ student.first_name }} {{student.middle_name}}
@@ -9,6 +10,9 @@
 	<td>
 		<a href="{% url 'student-edit' student.id %}">Изменить</a>
 	</td>
+	<td>
+		<a href="{% url 'student-delete' student.id %}">Удалить</a>
+	</td>
 	</tr>
-	</table>
 {% endfor %}
+	</table>

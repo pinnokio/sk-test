@@ -26,3 +26,9 @@ class StudentUpdateView(UpdateView):
     
     def get_success_url(self):
         return reverse('group-details', args=(self.object.group.id,))
+
+class StudentDeleteView(DeleteView):
+    model = Student
+
+    def get_success_url(self):
+        return reverse('group-details', args=(self.object.group.id,))

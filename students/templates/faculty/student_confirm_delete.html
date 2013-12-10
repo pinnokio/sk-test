@@ -1,0 +1,5 @@
+<form method="post">{% csrf_token %}
+    Подтвердите удаление студента 
+    "{{ object.last_name }} {{ object.first_name }} {{ object.middle_name }}"
+    <input type="submit" value="Submit" />
+</form>

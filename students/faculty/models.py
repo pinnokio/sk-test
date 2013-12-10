@@ -16,7 +16,7 @@ class Student(models.Model):
                               self.middle_name)
 
     class Meta:
-        verbose_name = u"Студента"
+        verbose_name = u"Студент"
         verbose_name_plural = u"Студенты"
 
 class Group(models.Model):
@@ -27,5 +27,5 @@ class Group(models.Model):
         return u"%s" % self.name
 
     class Meta:
-        verbose_name = u"Группу"
+        verbose_name = u"Группа"
         verbose_name_plural = u"Группы"
