@@ -6,12 +6,14 @@ from django.shortcuts import get_object_or_404
 from django.core.urlresolvers import reverse_lazy, reverse
 from faculty.models import Group, Student
 
+
 class GroupListView(ListView):
     model = Group
 
     def get_context_data(self, **kwargs):
         context = super(GroupListView, self).get_context_data(**kwargs)
         return context
+
 
 class GroupDetailsView(DetailView):
     model = Group
@@ -21,11 +23,13 @@ class GroupDetailsView(DetailView):
         context = super(GroupDetailsView, self).get_context_data(**kwargs)
         return context
 
+
 class StudentUpdateView(UpdateView):
     model = Student
-    
+
     def get_success_url(self):
         return reverse('group-details', args=(self.object.group.id,))
+
 
 class StudentDeleteView(DeleteView):
     model = Student

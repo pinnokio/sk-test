@@ -5,7 +5,7 @@
 	<!-- <td><a href="/group/{{ group.id }}">{{ group.name }}</a></td> -->
 	{% url 'group-details' group.id as group_url %}
 	<td><a href="{{ group_url }}">{{ group.name }}</a></td>
-	<td>{{ group.senior_student }}</td>
+	<td>{{ group.senior_student|default_if_none:"Не назначен" }}</td>
 	<td>{{ group.student_set.count }}</td>
 	</tr>
 {% empty %}
