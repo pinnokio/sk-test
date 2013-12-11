@@ -4,6 +4,7 @@
 
 <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
 {% csrf_token %}
+<p>Авторизуйтесь, пожалуйста, для использования ресурса</p>
 <table>
 <tr>
     <td>{{ form.username.label_tag }}</td>
@@ -15,6 +16,6 @@
 </tr>
 </table>
 
-<input type="submit" value="login" />
+<input type="submit" value="Войти" />
 <input type="hidden" name="next" value="{{ next }}" />
 </form>
