@@ -7,9 +7,9 @@ from django.contrib.auth.decorators import login_required
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^accounts/login/$', 'django.contrib.auth.views.login'), 
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'), 
                            # {'template_name': 'registration/login.html'}),
-    (r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
     url(r'^$', login_required(views.GroupListView.as_view()), 
                name='group-list'),
     url(r'^group/edit/(?P<pk>\d+)$', views.GroupDetailsView.as_view(),
