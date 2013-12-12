@@ -1,3 +1,11 @@
+{% if user.is_authenticated %}
+    <p>
+    	Пользователь: {{ user.username }}
+    	<a href="accounts/logout/">Выйти</a>
+    </p>
+{% else %}
+    <p>Welcome, new user. Please log in.</p>
+{% endif %}
 <h1>Список всех групп</h1>
 <table border="1" bordercolor="gray">
 	<tr>
