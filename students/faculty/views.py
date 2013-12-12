@@ -23,15 +23,18 @@ class GroupDetailsView(DetailView):
         context = super(GroupDetailsView, self).get_context_data(**kwargs)
         return context
 
+
 class GroupCreateView(CreateView):
     model = Group
     success_url = reverse_lazy('group-list')
+
 
 class StudentCreateView(CreateView):
     model = Student
 
     def get_success_url(self):
         return reverse('group-details', args=(self.object.group.id,))
+
 
 class StudentUpdateView(UpdateView):
     model = Student

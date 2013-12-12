@@ -1,11 +1,16 @@
 {% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
+<p>Имя пользователя или пароль введены неверно. Повторите ввод, пожалуйста.</p>
+{{ form.errors }}
 {% endif %}
 
-<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+<form method="post" action="{% url 'login' %}">
 {% csrf_token %}
 <p>Авторизуйтесь, пожалуйста, для использования ресурса</p>
 <table>
+<tr>
+    <td>{{ form.email.label_tag }}</td>
+    <td>{{ form.email }}</td>
+</tr>
 <tr>
     <td>{{ form.username.label_tag }}</td>
     <td>{{ form.username }}</td>

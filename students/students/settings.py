@@ -48,6 +48,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+AUTHENTICATION_BACKENDS = ('faculty.backends.EmailAuthBackend',)
+
 ROOT_URLCONF = 'students.urls'
 
 WSGI_APPLICATION = 'students.wsgi.application'
